@@ -17,10 +17,12 @@
         <td>Описание</td>
         <td>Бренд</td>
         <td>Цена</td>
+        <td>Действия</td>
+        <td>Переход</td>
     </tr>
     </thead>
     <tbody>
-    <!--/*@thymesVar id="customers" type="java.util.List<com.geekbrains.Product>"*/-->
+    <!--/*@thymesVar id="products" type="java.util.List<com.geekbrains.model.Product>"*/-->
     <tr th:each="product : ${products}">
         <td th:text="${product.id}"></td>
         <td th:text="${product.title}"></td>
@@ -28,6 +30,7 @@
         <td th:text="${product.brand}"></td>
         <td th:text="${product.price}"></td>
         <td><a th:href="@{'/products/edit/' + ${product.id}}" >Редактировать</a></td>
+        <td><a th:href="@{'/products/product/' + ${product.id}}" >Ссылка</a></td>
     </tr>
     </tbody>
 </table>

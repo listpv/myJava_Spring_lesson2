@@ -20,10 +20,10 @@ public class ProductRepository {
     public void init(){
         this.productList = new ArrayList<>();
         productList.add(new Product(1l, "Clothes", "Woman", "Gucci", 100.0));
-        productList.add(new Product(1l, "Shoes", "Woman", "Prada", 110.0));
-        productList.add(new Product(1l, "Clothes", "Man", "Iceberg", 50.0));
-        productList.add(new Product(1l, "Shoes", "Man", "Hogan", 70.0));
-        productList.add(new Product(1l, "Clothes", "Women", "Chanel", 90.0));
+        productList.add(new Product(2l, "Shoes", "Woman", "Prada", 110.0));
+        productList.add(new Product(3l, "Clothes", "Man", "Iceberg", 50.0));
+        productList.add(new Product(4l, "Shoes", "Man", "Hogan", 70.0));
+        productList.add(new Product(5l, "Clothes", "Women", "Chanel", 90.0));
     }
 
     public Product saveOrUpdate(Product product) {
